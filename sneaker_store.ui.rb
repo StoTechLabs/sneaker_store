@@ -71,6 +71,10 @@ def add_shoe
     @current_shoe = shoe
   end
 end
-
+# loop do
+#   puts "Type 'c' to add another color, type 's' to add another size, or 'n' to add a new style."
+#   puts "Type 'm' to go back to the main menu."
+#   choice = gets.chomp
+# end
 
 main_menu

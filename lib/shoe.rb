@@ -14,5 +14,5 @@ class Shoe
 
  def save
   @@all_shoes << self
-  end
+ end
 end
