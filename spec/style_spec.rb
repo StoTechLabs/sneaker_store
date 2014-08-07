@@ -11,7 +11,7 @@ describe Style do
 
   it 'Should add a shoe to the style' do
     test_style = Style.new({:name => 'Air Tech Challenge'})
-    test_shoe = Shoe.new({:color => 'Obsidian', :size => 11})
+    test_shoe = Shoe.new({:color => 'Obsidian', :size => 11, :quantity => 3})
     test_style.add_shoe(test_shoe)
     expect(test_style.shoe).to eq [test_shoe]
   end

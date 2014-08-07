@@ -1,4 +1,6 @@
 class Brand
+      attr_reader(:name, :headquarters, :styles)
+    @@all_brands = []
 
   def initialize(attributes)
     @name = attributes[:name]
@@ -6,11 +8,15 @@ class Brand
     @styles = []
   end
 
-  def styles
-    @styles
+  def Brand.all
+    @@all_brands
   end
 
   def add_style(style)
     @styles << style
+  end
+
+  def save
+   @@all_brands << self
   end
 end
