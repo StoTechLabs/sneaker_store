@@ -4,5 +4,4 @@ class Shoe
   @color = attributes[:color]
   @size = attributes[:size]
  end
-
 end

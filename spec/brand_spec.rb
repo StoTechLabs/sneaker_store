@@ -1,6 +1,6 @@
 require 'rspec'
 require 'brand'
-
+require 'style'
 
 describe Brand do
 
