@@ -11,9 +11,9 @@ it "should initialize when a shoe brand or HQ is input" do
 
 it "it should add a style to the brand" do
   test_brand = Brand.new({:name => 'Nike'})
-  test_style = Style.new({:name => 'Air Tech Challenge'})
-  test_brand.add_style(test_style)
-  expect(test_brand.style).to eq [test_style]
+  test_styles = Style.new({:name => 'Air Tech Challenge'})
+  test_brand.add_style(test_styles)
+  expect(test_brand.styles).to eq [test_styles]
   end
 end
 

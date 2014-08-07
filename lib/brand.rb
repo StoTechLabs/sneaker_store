@@ -3,17 +3,14 @@ class Brand
   def initialize(attributes)
     @name = attributes[:name]
     @headquarters = attributes[:headquarters]
-    @style = []
+    @styles = []
   end
 
-  def style
-    @style
+  def styles
+    @styles
   end
 
   def add_style(style)
-    @style << style
+    @styles << style
   end
-
-
-
 end
