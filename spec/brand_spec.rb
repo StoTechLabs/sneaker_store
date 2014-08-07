@@ -3,6 +3,7 @@ require 'brand'
 
 
 describe Brand do
+
 it "should initialize when a shoe brand or HQ is input" do
   test_brand = Brand.new({:name => 'Nike', :headquarters => 'Beaverton, OR'})
   expect(test_brand).to be_an_instance_of Brand

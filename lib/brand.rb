@@ -14,4 +14,6 @@ class Brand
     @style << style
   end
 
+
+
 end
