@@ -1,9 +1,8 @@
 class Shoe
-  attr_reader(:color, :size, :quantity)
+  attr_reader(:size, :quantity)
   @@all_shoes = []
 
  def initialize(attributes)
-  @color = attributes[:color]
   @size = attributes[:size]
   @quantity = attributes[:quantity]
  end

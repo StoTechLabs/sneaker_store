@@ -1,9 +1,10 @@
 class Style
-    attr_reader(:shoe)
+    attr_reader(:name, :color, :shoe)
     @@all_styles = []
 
   def initialize(attributes)
     @name = attributes[:name]
+    @color = attributes[:color]
     @shoe = []
   end
 
