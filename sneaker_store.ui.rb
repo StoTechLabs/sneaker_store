@@ -1,7 +1,7 @@
 require './lib/brand'
 require './lib/style'
 require './lib/shoe'
-require 'pry'
+# require 'pry'
 
 @current_brand = nil
 @current_style = nil
@@ -114,28 +114,37 @@ def list_styles
        @current_style = style
     end
   end
+  # puts @current_brand 
   puts @current_style.name
   @current_style.shoe.each do |shoe|
     puts "Color: #{@current_style.color}" + "| " + "Size: #{shoe.size}" + "| " + "Quantity: #{shoe.quantity}"
-    end
-gets.chomp
   end
+list_shoe
+end
 
 
-# def list_shoe
-#   puts "type another style name to see the list of sizes and quantities or press 'm' for main menu"
-#   choice = gets.chomp
-#   @current_brand.styles.each do |style|
-#     if choice == style.name
-#        @current_style = style
-#     else choice == 'm'
-#         main_menu
-#     end
-#   puts @current_style.name
-#   @current_style.shoe.each do |shoe|
-#     puts "Color: #{@current_style.color}" + "| " + "Size: #{shoe.size}" + "| " + "Quantity: #{shoe.quantity}"
-#   end
-# end
+def list_shoe
+  puts "\n\n"
+  puts "Type another style name to see the list of sizes and quantities or press 'm' for main menu"
+  choice = gets.chomp
+  @current_brand.styles.each do |style|
+    if choice == style.name
+      @current_style = style
+    end
+  end
+  puts @current_style.name
+  @current_style.shoe.each do |shoe|
+    puts "Color: #{@current_style.color}" + "| " + "Size: #{shoe.size}" + "| " + "Quantity: #{shoe.quantity}"
+  end
+  
+  
+
+  if choice == 'm'
+        main_menu
+  end 
+
+  list_shoe
+end
 
 
 main_menu
