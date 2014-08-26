@@ -1,12 +1,17 @@
-## SNEAKER STORE ##
+ Sneaker Store
+==================================
 
-# Developers: Brandon and Joshua #
+#Authors:
 
-Welcome to the sneaker store. input your sneaker stock by brand and style. 
-When you have setup your inventory create a list of sizes and quantity. Now 
-you have a complete stock list for your store. You can list your current 
-inventory and edit or delete styles depending on what you sell or pick-up.
+####Joshua Storey
+####Brandon Madsen
 
-Now go sell some kicks!
+###Version:
+V.1.0.0
 
-license: MIT  
+###Description:
+This program will simulate a sneaker inventory system allowing the user to keep track of brands, stlyes, sizes, and quantities. This program was built with an emphasis on object oriented design in Ruby. This program was initially built to run on the command line.
+
+Enjoy!
+
+License: MIT
