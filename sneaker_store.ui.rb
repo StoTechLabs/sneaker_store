@@ -137,12 +137,9 @@ def list_shoe
     puts "Color: #{@current_style.color}" + "| " + "Size: #{shoe.size}" + "| " + "Quantity: #{shoe.quantity}"
   end
   
-  
-
   if choice == 'm'
-        main_menu
+    main_menu
   end 
-
   list_shoe
 end
 
